@@ -23,7 +23,7 @@ RUN apt-get install -y -q memcached libmemcached-dev libmemcache-dev zlib1g-dev
 # Expose the default port
 EXPOSE 11211
 
-CMD ["-u", "memcache", "-m", "128"]
+CMD ["-u", "memcache", "-m", "128", "-L"]
 
 USER memcache
 
